@@ -1,0 +1,4 @@
+﻿  main.c
+c:\users\trunk\desktop\ex2_y2_spainer\ex1_y2\ex1_y2\main.c(147): warning C4047: 'function': 'node *' differs in levels of indirection from 'node *(__cdecl *)(void *)'
+c:\users\trunk\desktop\ex2_y2_spainer\ex1_y2\ex1_y2\main.c(147): warning C4024: 'get_closest': different types for formal and actual parameter 3
+  ex1_y2.vcxproj -> C:\Users\trunk\Desktop\ex2_y2_spainer\ex1_y2\Debug\ex1_y2.exe
