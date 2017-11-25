@@ -96,10 +96,7 @@ int main(int argc, char** argv)
 								student->grade_avg = avg(&student->list_grades, get_course_sum);
 							}
 #else
-							node* limit = get_closest(&student->list_grades, cmp_grade, new_node);
-							struct course* lim_data = NULL;
-							if(limit)
-								lim_data = limit->data;
+							node* limit = get_closest(&student->list_grades,1, new_node);
 							if (add_to_list(&student->list_grades, limit, new_node) != 0)
 							{
 								printf(SUCCESS);
@@ -144,7 +141,7 @@ int main(int argc, char** argv)
 								student->income_avg = avg(&student->list_income, income_sum);
 							}
 #else
-							node* limit = get_closest(&student->list_income, cmp_income, new_data);
+							node* limit = get_closest(&student->list_income, 0, new_data);
 							if (add_to_list(&student->list_income, limit, new_node) != 0)
 							{
 								printf(SUCCESS);
